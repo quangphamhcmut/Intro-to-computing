@@ -1,0 +1,14 @@
+|wrapper
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+LEDR[0] <= design1:dut.f
+
+
+|wrapper|design1:dut
+data_i[0] => case1[0].IN1
+data_i[1] => case2[0].IN0
+data_i[2] => case2[0].IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,31 @@
+|wrapper
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= design5:dut.result
+
+
+|wrapper|design5:dut
+sel[0] => sel[0].IN1
+sel[1] => sel[1].IN1
+sel[2] => sel[2].IN1
+result[0] <= <GND>
+
+
+|wrapper|design5:dut|decoder:decoder0
+select[0] => Decoder0.IN2
+select[1] => Decoder0.IN1
+select[2] => Decoder0.IN0
+data_out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

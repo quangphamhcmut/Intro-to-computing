@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, /home/python/Documents/projects/prelab_2/ex0/src/design1.sv
+source_file = 1, /home/python/Documents/projects/prelab_2/ex0/wrapper.sv
+source_file = 1, /home/python/Documents/projects/prelab_2/ex0/quartus/db/wrapper.cbx.xml
+design_name = wrapper
+instance = comp, \SW[1]~I , SW[1], wrapper, 1
+instance = comp, \SW[0]~I , SW[0], wrapper, 1
+instance = comp, \SW[2]~I , SW[2], wrapper, 1
+instance = comp, \dut|f[0] , dut|f[0], wrapper, 1
+instance = comp, \LEDR[0]~I , LEDR[0], wrapper, 1
