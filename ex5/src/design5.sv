@@ -11,16 +11,8 @@ decoder decoder0 (
   .data_out (data_out)
 );
 
-`ifdef VERILATOR
 /* verilator lint_off UNUSEDSIGNAL */
-always_comb begin: proc_idk
-  assign unusedgate[0] = data_out[1];
-  assign unusedgate[1] = data_out[3];
-  assign unusedgate[2] = data_out[4];
-  assign unusedgate[3] = data_out[6];
-  assign result = ~((data_out[0] & data_out[2]) & (data_out[5] & data_out[7]));
-end
+assign result = ~((data_out[0] & data_out[2]) & (data_out[5] & data_out[7]));
 /* verilator lint_on UNUSEDSIGNAL */
-`endif
-
+  
 endmodule: design5
